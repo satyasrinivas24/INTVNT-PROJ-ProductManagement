@@ -10,7 +10,7 @@ python3
 python3 -m venv venv
 
 # activate the virtual environment
-. venv/bin/activate
+venv/Scripts/activate
 
 # install the required packages inside venv
 pip3 install -r requirements.txt
