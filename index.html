@@ -1,0 +1,184 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Catalog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Food Items</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Add to Cart</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <button>SignIn</button>
+      <button>SignUp</button>
+    </div>
+  </header>
+  <div class="main-content">
+    <aside class="filter-container">
+      <h3>Filter Products</h3>
+      <div class="filter-group">
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option>All Categories</option>
+          <option>Fruits</option>
+          <option>Sweets</option>
+          <option>Snacks</option>
+          <option>Pickles</option>
+          <option>Hot/Cold Liquids</option>
+          <option>Chinesefood</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Price Range:</label>
+        <input type="number" placeholder="Min ₹" />
+        <input type="number" placeholder="Max ₹" style="margin-top:8px;" />
+      </div>
+      <div class="filter-group">
+        <label for="popularity">Sort by Popularity:</label>
+        <select id="popularity" name="popularity">
+          <option>--Select--</option>
+          <option>Most Popular</option>
+          <option>Less Popular</option>
+        </select>
+      </div>
+      <button class="apply-btn">Apply Filters</button>
+    </aside>
+    <main class="products-container">
+      <div class="product-card"  data-category="fruits">
+        <div class="product-status">In Stock</div>
+        <img src="https://as1.ftcdn.net/v2/jpg/15/65/63/80/1000_F_1565638024_IlnrQK4afVYAFsGR5ExIi09dOa53QXbh.jpg" alt="Fruits" />
+        <h4>Apple → 1kg</h4>
+        <p>→ Fresh and crispy red apples.</p>
+        <div class="rating">★ 4.8</div>
+        <div class="price">₹150</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="fruits">
+        <div class="product-status">In Stock</div>
+        
+        <img src="https://t4.ftcdn.net/jpg/10/44/24/41/240_F_1044244160_CiAY1R35iLChd7arfBXcI66bh7BsXSW4.jpg" alt="fruits" />
+        <h4>Banana → 1kg</h4>
+        <p>→ Fresh and sweet bananas, perfect for snacks.</p>
+        <div class="rating">★ 4.7</div>
+        <div class="price">₹140</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card"  data-category="Hot/cold Liquids">
+        <div class="product-status">In Stock</div>
+        <div class="product-s"> </div>
+        <img src="https://t4.ftcdn.net/jpg/14/66/36/07/240_F_1466360787_m9Fbps3dneqzQ9FGaCXYDUYhQ9wr9W12.jpg" alt="Hot/cold Liquids" />
+        <h4>Masala Chai Tea</h4>
+        <p>→Authentic Indian spiced tea blend with cardamom and ginger.</p>
+        <div class="rating">★ 4.7</div>
+        <div class="price">₹95</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <!-- Add more product-card elements here for extra products -->
+       <div class="product-card"  data-category="Sweet">
+        <div class="product-status">In Stock</div>
+        <img src="https://t3.ftcdn.net/jpg/05/34/44/58/240_F_534445812_cVPXdk876ncdNbrmahfWPODVW9ZpTw5d.jpg" alt="Sweet" />
+        <h4>Gulab Jamun →  1kg</h4>
+        <p>→ Soft and spongy in sugar syrup</p>
+        <div class="rating">★ 4.9</div>
+        <div class="price">₹500</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="Pickles">
+        <div class="product-status">In Stock</div>
+        <img src="https://t3.ftcdn.net/jpg/07/65/71/28/240_F_765712871_ag3nh6qNBd5DbBxrolqTzAYeXkaIMUVg.jpg" alt="Pickles" />
+        <h4>Mango Pickle → 1kg</h4>
+        <p>→ Authentic homemade flavor</p>
+        <div class="rating">★ 4.7</div>
+        <div class="price">₹1000</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="Hot/Cold Liquids">
+        <div class="product-status">In Stock</div>
+        <img src="https://t3.ftcdn.net/jpg/03/56/66/36/240_F_356663692_9ePFG3kd6LvBZl6uCCwKXlLyRwUXsS1s.jpg" alt="Hot/Cold Liquids" />
+        <h4> Coke → 1Lt</h4>
+        <p>→ Perfect drink for any meal.</p>
+        <div class="rating">★ 4.2</div>
+        <div class="price">₹150</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div><div class="product-card" data-category="Snacks">
+        <div class="product-status">In Stock</div>
+        <img src="https://t4.ftcdn.net/jpg/15/58/03/63/240_F_1558036373_QH8Wu4oPx4lasAeC4oEs8rHp2jxYJj7r.jpg" alt="Snacks" />
+        <h4>Samosa → 1 Full</h4>
+        <p>→ Crispy outside, spicy inside</p>
+        <div class="rating">★ 4.3</div>
+        <div class="price">₹120</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="Chinesefood">
+        <div class="product-status">In Stock</div>
+        <img src="https://t3.ftcdn.net/jpg/06/50/79/32/240_F_650793256_Mw3kosB1iWiFyz4OH2aDHJKs7BIwBWTd.jpg" alt="Chinesefood" />
+        <h4> Noodles → 1 Full</h4>
+        <p> → Perfectly spiced comfort food</p>
+        <div class="rating">★ 3.9</div>
+        <div class="price">₹350</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="Snacks">
+        <div class="product-status">In Stock</div>
+        <img src="https://t4.ftcdn.net/jpg/16/43/73/27/240_F_1643732751_4KRrhXrusIhruq525D1fsBFfIxtG78fw.jpg" alt="Snacks" />
+        <h4> Mirchi Bajji → 1 Full</h4>
+        <p> → Hot snack for rainy days</p>
+        <div class="rating">★ 4.5</div>
+        <div class="price">₹120</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="Sweets">
+        <div class="product-status">In Stock</div>
+        <img src="https://t3.ftcdn.net/jpg/15/62/15/42/240_F_1562154297_fhi4lvxB82HHRyacxuXXJDOjSB0dpuoW.jpg" alt="Sweets" />
+        <h4>Kaju Katli →  1Kg</h4>
+        <p> → Rich taste, simple elegance</p>
+        <div class="rating">★ 4.2</div>
+        <div class="price">₹1550</div>
+        <div class="actions">
+          <button>View Details</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  
