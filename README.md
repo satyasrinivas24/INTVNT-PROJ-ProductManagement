@@ -2,7 +2,11 @@
 Allows the user to select and order the food item very simply and seemlessly
 ## Usage
 
-Clone the project and follow the steps below
+Fork the project and follow the steps below
+
+import to VS Code
+setup the application by following the below instructions
+
 ```
 python3
 
